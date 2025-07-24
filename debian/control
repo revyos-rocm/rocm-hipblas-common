@@ -26,16 +26,6 @@ Depends:
  rocm-cmake,
  rocm-core,
  rocm-env,
-Description: Next generation BLAS implementation for ROCm platform - binary
- rocBLAS is the ROCm Basic Linear Algebra Subprograms (BLAS) library. rocBLAS is
- implemented in the HIP programming language and optimized for AMD GPUs.
-
-Package: rocm-hipblas-common-dev
-Architecture: any
-Depends:
- ${shlibs:Depends},
- ${misc:Depends},
- rocm-hipblas-common,
-Description: Next generation BLAS implementation for ROCm platform - dev
- rocBLAS is the ROCm Basic Linear Algebra Subprograms (BLAS) library. rocBLAS is
- implemented in the HIP programming language and optimized for AMD GPUs.
+Description: A header-only library for hipBLAS and hipBLASLt.
+ hipBLAS-common is a header-only library that provides common files for hipBLAS
+ and hipBLASLt.
