@@ -1,0 +1,41 @@
+Source: rocm-hipblas-common
+Section: devel
+Priority: optional
+Maintainer: CHEN Xuan <chenxuan@iscas.ac.cn>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libblas-dev,
+ pkg-config,
+ rocm-cmake,
+ rocm-core,
+ rocm-env,
+ rocm-hip-on-rocclr-dev,
+ rocm-llvm,
+Standards-Version: 4.7.0
+Homepage: https://github.com/ROCm/hipBLAS-common
+Vcs-Browser: https://github.com/revyos-rocm/rocm-hipblas-common
+Vcs-Git: https://github.com/revyos-rocm/rocm-hipblas-common.git
+
+Package: rocm-hipblas-common
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ rocm-cmake,
+ rocm-core,
+ rocm-env,
+Description: Next generation BLAS implementation for ROCm platform - binary
+ rocBLAS is the ROCm Basic Linear Algebra Subprograms (BLAS) library. rocBLAS is
+ implemented in the HIP programming language and optimized for AMD GPUs.
+
+Package: rocm-hipblas-common-dev
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ rocm-hipblas-common,
+Description: Next generation BLAS implementation for ROCm platform - dev
+ rocBLAS is the ROCm Basic Linear Algebra Subprograms (BLAS) library. rocBLAS is
+ implemented in the HIP programming language and optimized for AMD GPUs.
