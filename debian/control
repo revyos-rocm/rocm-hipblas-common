@@ -11,7 +11,6 @@ Build-Depends:
  rocm-cmake,
  rocm-core,
  rocm-env,
- rocm-hip-on-rocclr-dev,
  rocm-llvm,
 Standards-Version: 4.7.0
 Homepage: https://github.com/ROCm/hipBLAS-common
@@ -23,7 +22,6 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- rocm-cmake,
  rocm-core,
  rocm-env,
 Description: A header-only library for hipBLAS and hipBLASLt.
