@@ -10,8 +10,8 @@ Build-Depends:
  pkg-config,
  rocm-cmake,
  rocm-core,
- rocm-env,
- rocm-llvm,
+ rocm-env (>= 7.0.0),
+ rocm-llvm (>= 7.0.0),
 Standards-Version: 4.7.0
 Homepage: https://github.com/ROCm/hipBLAS-common
 Vcs-Browser: https://github.com/revyos-rocm/rocm-hipblas-common
@@ -23,7 +23,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  rocm-core,
- rocm-env,
+ rocm-env (>= 7.0.0),
 Description: A header-only library for hipBLAS and hipBLASLt.
  hipBLAS-common is a header-only library that provides common files for hipBLAS
  and hipBLASLt.
